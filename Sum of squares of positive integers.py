@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Sep 25 16:47:00 2023
-
-@author: lione
-"""
-
 n=int(input(""))
 
 
