@@ -1,0 +1,27 @@
+inputcsv = input("")
+result = 0
+myList = inputcsv.split(',')
+if len(myList)<=1000:
+    for i in myList:
+        if  -1000 <= int(i) <= 1000: 
+            result+=int(i)
+        else:
+            result+=0
+
+print(result)
+        
+    input_csv = input("Enter comma-separated values: ")
+result = 0
+my_list = input_csv.split(',')
+
+if len(my_list) <= 1000:
+    for num in my_list:
+        try:
+            num = int(num)
+            if -1000 <= num <= 1000:
+                result += num
+        except ValueError:
+            print("Invalid input: '{}' is not a valid integer.".format(num))
+
+print("Sum of valid numbers within range:", result)
+
